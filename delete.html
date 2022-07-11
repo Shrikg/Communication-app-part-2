@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/delete.css" />
+  </head>
+  <style>
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <body>
+    <ul class="nav-bar">
+      <li><a href="/html/chat.html">Group Chat</a></li>
+      <li><a class="active" href="/html/users.html">Manage Users</a></li>
+      <li><a href="/html/logout.html">Logout</a></li>
+    </ul>
+    <h1>Users</h1>
+    <table id="showUsers">
+      <tr>
+        <th class="left-align">Name</th>
+        <th>User Email ID</th>
+        <th></th>
+      </tr>
+
+
+      
+      <div class="container">
+        <div class="pop-up">
+          <p>
+            Confirm User Deletion<button class="cross">
+              <a href="/html/users.html">X</a>
+            </button>
+          </p>
+        </div>
+        <div class="img">
+          <p><img src="/css/imgaes/question mark.jpg">Are You Sure ?</b>
+          </p>
+        </div>
+        <button id="okbtn" onclick="deleteUser()" >OK</button>
+        <button><a href="/html/users.html">Cancel</a></button>
+      </div>
+      
+    </table>
+
+    <script src="../js/register.js"></script>
+    <script src="../js/delete.js"></script>
+    <script>
+      // deleteUser();
+      // showData();
+</script> 
+  </body>
+</html>
